@@ -4,7 +4,7 @@
  * @File = factorial.c
  * @Date = 2022-12-28
  * @Author = Jannis Metrikat
- * @Version = Version Number.0
+ * @Version = 1.0
  */
 
 #include <stdio.h>
