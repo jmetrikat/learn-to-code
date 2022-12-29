@@ -14,7 +14,7 @@ import (
 	"strconv"
 )
 
-// Calculates the fibonacci number of a given number.
+// calculates the fibonacci number of a given number
 func fibonacci(n int) int {
 	fib := make([]int, n+1, n+2)
 	if n < 2 {
@@ -30,7 +30,7 @@ func fibonacci(n int) int {
 	return fib[n]
 }
 
-// main is the entry point for the program.
+// main is the entry point for the program
 func main() {
 	if len(os.Args) != 2 {
 		fmt.Println("Usage: go run fibonacci.go <number>")

@@ -12,7 +12,7 @@
 public class Factorial {
 
     /**
-     * Calculates the factorial of a given number.
+     * calculates the factorial of a given number
      */
     public static int factorial(int n) {
         if (n == 0) {
@@ -23,7 +23,7 @@ public class Factorial {
     }
 
     /**
-     * main method.
+     * main method
      */
     public static void main(String[] args) {
         if (args.length != 1) {

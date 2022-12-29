@@ -7,7 +7,7 @@
 
 use std::env;
 
-// Calculates the factorial of a given number.
+// calculates the factorial of a given number
 fn factorial(n: u64) -> u64 {
     if n == 0 {
         1
@@ -16,7 +16,7 @@ fn factorial(n: u64) -> u64 {
     }
 }
 
-// Main function.
+// main function
 fn main() {
     let args: Vec<String> = env::args().collect();
     let n: u64 = args[1].parse().unwrap();

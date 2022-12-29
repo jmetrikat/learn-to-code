@@ -10,7 +10,7 @@
 
 """
 
-#  Calculates the factorial of a given number.
+# calculates the factorial of a given number
 def factorial(n):
     if n == 0:
         return 1

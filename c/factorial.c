@@ -10,9 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * Calculates the factorial of a given number.
- */
+/* calculates the factorial of a given number */
 int factorial(int n) {
     if (n == 0) {
         return 1;
@@ -21,9 +19,7 @@ int factorial(int n) {
     }
 }
 
-/**
- * main function.
- */
+/* main function */
 int main(int argc, char *argv[]) {
     int n;
 
