@@ -1,18 +1,16 @@
 # Learn to Code 👨‍💻
 Solving common programming problems in different programming languages.
 
----
-
-Currently experimenting with:
+## Languages
   - C
   - Java
   - Go
   - Python
   - Rust
 
---- 
 
-Problems to solve:
+
+## Problems
    - [x] Factorial
    - [ ] Fibonacci
    - [ ] Greatest common divisor
