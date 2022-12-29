@@ -14,12 +14,14 @@ import (
 	"strconv"
 )
 
-// calculates the fibonacci number of a given number
+// calculate the fibonacci number of a given number
 func fibonacci(n int) int {
 	fib := make([]int, n+1, n+2)
+
 	if n < 2 {
 		fib = fib[0:2]
 	}
+
 	fib[0] = 0
 	fib[1] = 1
 
