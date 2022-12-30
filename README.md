@@ -8,8 +8,6 @@ Solving common programming problems in different programming languages.
   - Python
   - Rust
 
-
-
 ## Problems
    - [x] Factorial
    - [ ] Fibonacci
@@ -17,5 +15,3 @@ Solving common programming problems in different programming languages.
    - [ ] Least common multiple
    - [ ] Primes
    - [ ] Primefactors
- 
-  
