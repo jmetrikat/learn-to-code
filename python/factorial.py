@@ -10,6 +10,8 @@
 
 """
 
+import sys
+
 # calculates the factorial of a given number
 def factorial(n):
     if n == 0:
@@ -19,5 +21,9 @@ def factorial(n):
 
 
 # main entry point
-n = input("Enter a number to find the factorial of: \n")
+if len(sys.argv) != 2:
+    print("Usage: python factorial.py <number>")
+    sys.exit(1)
+
+n = sys.argv[1]
 print(factorial(int(n)))

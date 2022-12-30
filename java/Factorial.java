@@ -14,7 +14,7 @@ public class Factorial {
     /**
      * calculates the factorial of a given number
      */
-    public static int factorial(int n) {
+    public static long factorial(long n) {
         if (n == 0) {
             return 1;
         } else {
@@ -29,7 +29,7 @@ public class Factorial {
         if (args.length != 1) {
             System.out.println("Usage: java Factorial <number>");
         } else {
-            int n = Integer.parseInt(args[0]);
+            long n = Integer.parseInt(args[0]);
             System.out.println(factorial(n));
         }
     }
