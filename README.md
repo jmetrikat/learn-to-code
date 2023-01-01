@@ -1,4 +1,4 @@
-# Learn to Code 👨‍💻
+# 👨‍💻 Learn to Code
 Solving common programming problems in different programming languages.
 
 ## Languages
