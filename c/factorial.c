@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 /* calculates the factorial of a given number */
-int factorial(int n) {
+long long factorial(long long n) {
     if (n == 0) {
         return 1;
     } else {
@@ -21,14 +21,11 @@ int factorial(int n) {
 
 /* main function */
 int main(int argc, char *argv[]) {
-    int n;
-
     if (argc != 2) {
-        printf("Usage: %s <number>\n", argv[0]);
-        return -1;
+        fprintf(stderr, "Usage: %s <number>\n", argv[0]);
+        return 1;
     }
 
-    n = atoi(argv[1]);
-    printf("%d\n", factorial(n));
+    printf("%lld\n", factorial(atoi(argv[1])));
     return 0;
 }

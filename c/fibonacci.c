@@ -12,29 +12,26 @@
 
 /* calculate fibonacci number of a given number */
 long long fibonacci(long long n) {
-    long long *fib = malloc(n * sizeof(long long));
+    long long *fib = (long long *) malloc((n + 1) * sizeof(long long));
 
     fib[0] = 0;
     fib[1] = 1;
 
     for (int i = 2; i <= n; i++) {
-        fib[i] = fib[i-1] + fib[i-2];
+        fib[i] = fib[i - 1] + fib[i - 2];
     }
 
     long long result = fib[n];
     free(fib);
-    
+
     return result;
 }
 
 int main(int argc, char *argv[]) {
-    long long n;
-
     if (argc != 2) {
-        printf("Usage: %s <number>\n", argv[0]);
-        return -1;
+        fprintf(stderr, "Usage: %s <number>\n", argv[0]);
+        return 1;
     }
 
-    n = atoi(argv[1]);
-    printf("%lld\n", fibonacci(n));
+    printf("%lld\n", fibonacci(atoi(argv[1])));
 }
