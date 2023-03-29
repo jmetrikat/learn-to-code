@@ -13,7 +13,7 @@
 import sys
 
 # calculates the factorial of a given number
-def factorial(n):
+def factorial(n: int) -> int:
     if n == 0:
         return 1
     else:
@@ -25,5 +25,4 @@ if len(sys.argv) != 2:
     print("Usage: python factorial.py <number>")
     sys.exit(1)
 
-n = sys.argv[1]
-print(factorial(int(n)))
+print(factorial(int(sys.argv[1])))

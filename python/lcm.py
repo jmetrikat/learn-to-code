@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-""" Recursive Py.
+""" Recursive Python program to calculate the least common multiple of two given numbers.
 
 @File = lcm.py
 @Date = 2023-03-29

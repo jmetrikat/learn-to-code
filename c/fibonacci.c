@@ -12,7 +12,7 @@
 
 /* calculate fibonacci number of a given number */
 long long fibonacci(long long n) {
-    long long *fib = (long long *) malloc((n + 1) * sizeof(long long));
+    long long *fib = (long long *) malloc((n + 2) * sizeof(long long));
 
     fib[0] = 0;
     fib[1] = 1;
@@ -34,4 +34,5 @@ int main(int argc, char *argv[]) {
     }
 
     printf("%lld\n", fibonacci(atoi(argv[1])));
+    return 0;
 }

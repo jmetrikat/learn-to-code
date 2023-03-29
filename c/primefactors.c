@@ -1,5 +1,5 @@
 /**
- * C program to find prime factors of a number.
+ * C program to calculate prime factors of a given number.
  *
  * @File = primefactors.c
  * @Date = 2023-03-26
@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* calculate prime factors of a number */
+/* calculate prime factors of a given number */
 void primefactors(int n) {
     int found_factor = 0;
 

@@ -8,7 +8,6 @@
  *
  */
 
-
 public class Factorial {
 
     /**
@@ -28,6 +27,7 @@ public class Factorial {
     public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("Usage: java Factorial <number>");
+            System.exit(1);
         } else {
             long n = Integer.parseInt(args[0]);
             System.out.println(factorial(n));
