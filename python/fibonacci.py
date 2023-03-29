@@ -31,4 +31,8 @@ if len(sys.argv) != 2:
     print("Usage: python fibonacci.py <number>")
     sys.exit(1)
 
+if int(sys.argv[1]) < 0:
+    print("Number must be positive.")
+    sys.exit(1)
+
 print(fibonacci(int(sys.argv[1])))

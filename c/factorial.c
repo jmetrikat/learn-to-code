@@ -26,6 +26,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("%lld\n", factorial(atoi(argv[1])));
+    int n = atoi(argv[1]);
+    if (n < 0) {
+        fprintf(stderr, "Number must be positive.\n");
+        return 1;
+    }
+
+    printf("%lld\n", factorial(n));
     return 0;
 }

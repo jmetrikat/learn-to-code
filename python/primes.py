@@ -35,7 +35,7 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 if int(sys.argv[1]) < 2:
-    print("Number must be greater than 1")
+    print("Number must be greater than 1.")
     sys.exit(1)
 
 primes(int(sys.argv[1]))
