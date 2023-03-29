@@ -2,6 +2,7 @@
 
 ![C Badge](https://img.shields.io/badge/C-grey?logo=c&logoColor=white&style=flat-square)
 ![C++ Badge](https://img.shields.io/badge/C++-grey?logo=c%2B%2B&logoColor=white&style=flat-square)
+![CMake Badge](https://img.shields.io/badge/CMake-grey?style=flat-square&logo=cmake)
 ![OpenJDK Badge](https://img.shields.io/badge/Java-grey?logo=openjdk&logoColor=white&style=flat-square)
 ![Go Badge](https://img.shields.io/badge/Go-grey?logo=go&logoColor=white&style=flat-square)
 ![Python Badge](https://img.shields.io/badge/Python-grey?logo=python&logoColor=white&style=flat-square)
