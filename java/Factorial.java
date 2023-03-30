@@ -28,9 +28,15 @@ public class Factorial {
         if (args.length != 1) {
             System.out.println("Usage: java Factorial <number>");
             System.exit(1);
-        } else {
-            long n = Integer.parseInt(args[0]);
-            System.out.println(factorial(n));
         }
+
+        long n = Integer.parseInt(args[0]);
+        if (n < 0) {
+            System.out.println("Number must be positive.");
+            System.exit(1);
+        }
+
+        System.out.println(factorial(n));
+        return;
     }
 }

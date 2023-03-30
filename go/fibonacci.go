@@ -41,8 +41,13 @@ func main() {
 
 	in := os.Args[1]
 	n, err := strconv.Atoi(in)
+
 	if err != nil {
 		panic(err)
+	}
+	if n < 0 {
+		fmt.Println("Number must be positive.")
+		os.Exit(1)
 	}
 
 	fmt.Println(fibonacci(n))

@@ -8,7 +8,7 @@
 use std::env;
 
 // calculates the factorial of a given number
-fn factorial(n: u64) -> u64 {
+fn factorial(n: i64) -> i64 {
     if n == 0 {
         1
     } else {
@@ -19,6 +19,12 @@ fn factorial(n: u64) -> u64 {
 // main function
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let n: u64 = args[1].parse().unwrap();
+    let n: i64 = args[1].parse().unwrap();
+
+    if n < 0 {
+        println!("Number must be positive.");
+        std::process::exit(1);
+    }
+
     println!("{}", factorial(n));
 }
