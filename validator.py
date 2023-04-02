@@ -53,9 +53,9 @@ expected_outputs = {
         (35, 49): 7,
         (12, 30): 6,
         (16, 24): 8,
-        (27, 36): 9,
-        (8, 12): 4,
-        (9, 15): 3
+        (-27, 36): 9,
+        (8, -12): 4,
+        (-9, -15): 3
     },
     "lcm": {
         (10, 25): 50,
@@ -65,9 +65,9 @@ expected_outputs = {
         (35, 49): 245,
         (12, 30): 60,
         (16, 24): 48,
-        (27, 36): 108,
-        (8, 12): 24,
-        (9, 15): 45
+        (-27, 36): 108,
+        (8, -12): 24,
+        (-9, -15): 45
     },
     "primefactors": {
         -1: "Number must be greater than 1.",
@@ -258,7 +258,6 @@ def validate_solution(lang: str, problem: str, verbose: bool) -> int:
     run_func = getattr(module, func_name)
 
     for key, value in prob_output.items():
-        # print(f"Running {problem} with input {key}...")
         actual_output = run_func(problem, key)
         expected_output = value
 
@@ -316,6 +315,7 @@ elif choice == "2":
     exit(1)
 
 
+# run go solutions
 elif choice == "3":
     correct = 0
     verbose = True
@@ -329,6 +329,7 @@ elif choice == "3":
     print('\033[1m' + f"{correct}/{len(problems)} problems correct in {lang}." + '\033[0m')
 
 
+# run java solutions
 elif choice == "4":
     correct = 0
     verbose = True
@@ -343,6 +344,7 @@ elif choice == "4":
     print('\033[1m' + f"{correct}/{len(problems)} problems correct in {lang}." + '\033[0m')
 
 
+# run python solutions
 elif choice == "5":
     correct = 0
     verbose = True
@@ -356,6 +358,7 @@ elif choice == "5":
     print('\033[1m' + f"{correct}/{len(problems)} problems correct in {lang}." + '\033[0m')
 
 
+# run rust solutions
 elif choice == "6":
     correct = 0
     verbose = True
@@ -370,6 +373,7 @@ elif choice == "6":
     print('\033[1m' + f"{correct}/{len(problems)} problems correct in {lang}." + '\033[0m')
 
 
+# run all solutions
 elif choice == "7":
     for lang in languages:
         correct = 0

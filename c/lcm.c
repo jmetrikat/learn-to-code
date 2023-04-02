@@ -20,7 +20,7 @@ int gcd(int a, int b) {
 }
 
 /* calculate least common multiple using greatest common divisor */
-int lcm(int a, int b) {
+unsigned int lcm(unsigned int a, unsigned int b) {
     return a * b / gcd(a, b);
 }
 
