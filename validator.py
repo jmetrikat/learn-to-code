@@ -269,10 +269,11 @@ def validate_solution(lang: str, problem: str, verbose: bool) -> int:
             if verbose:
                 print(f"Test failed for \033[3m{problem}\033[0m. Expected '{expected_output}', got '{actual_output}'.")
             return 1
-        elif verbose:
-            print(f"Test passed for \033[3m{problem}\033[0m.")
 
-        return 0
+    if verbose:
+        print(f"Test passed for \033[3m{problem}\033[0m.")
+
+    return 0
 
 
 # main entry point: ask user to choose between c and python
