@@ -1,22 +1,22 @@
 # 👨‍💻 Learn to Code
 
-![C Badge](https://img.shields.io/badge/C-grey?logo=c&logoColor=white&style=flat-square)
-![C++ Badge](https://img.shields.io/badge/C++-grey?logo=c%2B%2B&logoColor=white&style=flat-square)
+![C Badge](https://img.shields.io/badge/C-grey?style=flat-square&logo=c&logoColor=white)
+![C++ Badge](https://img.shields.io/badge/C++-grey?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![CMake Badge](https://img.shields.io/badge/CMake-grey?style=flat-square&logo=cmake)
-![OpenJDK Badge](https://img.shields.io/badge/Java-grey?logo=openjdk&logoColor=white&style=flat-square)
-![Go Badge](https://img.shields.io/badge/Go-grey?logo=go&logoColor=white&style=flat-square)
-![Python Badge](https://img.shields.io/badge/Python-grey?logo=python&logoColor=white&style=flat-square)
-![Rust Badge](https://img.shields.io/badge/Rust-grey?logo=rust&logoColor=white&style=flat-square)
+![OpenJDK Badge](https://img.shields.io/badge/Java-grey?style=flat-square&logo=openjdk&logoColor=white)
+![Go Badge](https://img.shields.io/badge/Go-grey?style=flat-square&logo=go&logoColor=white)
+![Python Badge](https://img.shields.io/badge/Python-grey?style=flat-square&logo=python&logoColor=white)
+![Rust Badge](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=rust&logoColor=white)
 
-Solving common programming problems in different programming languages.
+Exploring solutions to common programming challenges in a variety of programming languages.
 
 ## Languages
-- [C](./c/)
-- [C++](./cpp/)
-- [Java](./java/)
-- [Go](./go/)
-- [Python](./python/)
-- [Rust](./rust/)
+   - [x] [C](./c/)
+   - [ ] [C++](./cpp/)
+   - [x] [Java](./java/)
+   - [ ] [Go](./go/)
+   - [x] [Python](./python/)
+   - [ ] [Rust](./rust/)
 
 ## Problems
    - [x] Factorial
