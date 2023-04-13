@@ -25,6 +25,9 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("%d\n", gcd(atoi(argv[1]), atoi(argv[2])));
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+
+    printf("%d\n", gcd(abs(a), abs(b)));
     return 0;
 }

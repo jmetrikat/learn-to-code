@@ -26,4 +26,7 @@ if len(sys.argv) != 3:
     print("Usage: python gcd.py <number1> <number2>")
     sys.exit(1)
 
-print(gcd(int(sys.argv[1]), int(sys.argv[2])))
+a = int(sys.argv[1])
+b = int(sys.argv[2])
+
+print(gcd(abs(a), abs(b)))
