@@ -164,9 +164,6 @@ def run_go_solution(problem: str, key: int) -> str:
 # run solution for a given problem in Java and return the output
 def run_java_solution(problem: str, key: int) -> str:
     try:
-        os.chdir(f"{repo_path}/java")
-        subprocess.check_output(["javac", f"{problem[0].upper() + problem[1:]}.java"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
         if problem == "gcd" or problem == "lcm":
             output = subprocess.check_output(["java", f"{problem[0].upper() + problem[1:]}", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
         else:
@@ -337,6 +334,9 @@ elif choice == "4":
     lang = "Java"
 
     os.chdir(f"{repo_path}/{lang.lower()}")
+    java_files = subprocess.check_output(["find", f"{repo_path}/{lang.lower()}", "-name", "*.java"], stderr=subprocess.STDOUT).decode().splitlines()
+    subprocess.check_output(["javac"] + java_files, stderr=subprocess.STDOUT)
+
     for problem in problems:
         if validate_solution(lang, problem, verbose) == 0:
             correct += 1
@@ -385,6 +385,10 @@ elif choice == "7":
         if lang == "C":
             subprocess.run(["make", "clean"], check=True)
             subprocess.run(["make", "all"], check=True, stderr=subprocess.DEVNULL)
+
+        elif lang == "Java":
+            java_files = subprocess.check_output(["find", f"{repo_path}/{lang.lower()}", "-name", "*.java"], stderr=subprocess.STDOUT).decode().splitlines()
+            subprocess.check_output(["javac"] + java_files, stderr=subprocess.STDOUT)
 
         for problem in problems:
             if validate_solution(lang, problem, verbose) == 0:
