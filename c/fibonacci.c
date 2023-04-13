@@ -1,5 +1,5 @@
 /**
- *  C programm utilizing memoization to calculate the fibonacci number of a given number.
+ *  C programm utilizing memoization to calculate the Fibonacci sequence.
  *
  * @File = fibonacci.c
  * @Date = 2022-12-29
@@ -10,8 +10,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* calculate fibonacci number of a given number */
-long long fibonacci(long long n) {
+/* calculate the fibonacci sequence of a given number */
+long long fibonacci(int n) {
     long long *fib = (long long *) malloc((n + 2) * sizeof(long long));
 
     fib[0] = 0;

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-""" Python programm utilizing memoization to calculate the fibonacci sequence of a given number.
+""" Python programm utilizing memoization to calculate Fibonacci sequence.
 
 @File = fibonacci.py
 @Date = 2023-03-29
