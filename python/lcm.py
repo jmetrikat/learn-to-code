@@ -31,4 +31,7 @@ if len(sys.argv) != 3:
     print("Usage: python lcm.py <number1> <number2>")
     sys.exit(1)
 
-print(lcm(abs(int(sys.argv[1])), abs(int(sys.argv[2]))))
+a = int(sys.argv[1])
+b = int(sys.argv[2])
+
+print(lcm(abs(a), abs(b)))
