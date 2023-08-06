@@ -19,9 +19,9 @@ Exploring solutions to common programming challenges in a variety of programming
    - [ ] [Rust](./rust/)
 
 ## Problems
-   - [x] Factorial
-   - [ ] Fibonacci
-   - [ ] Greatest common divisor
-   - [ ] Least common multiple
-   - [ ] Primes
-   - [ ] Primefactors
+   - [x] [Factorial](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20factorial&type=code)
+   - [ ] [Fibonacci](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20fibonacci&type=code)
+   - [ ] [Greatest common divisor](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20gcd&type=code)
+   - [ ] [Least common multiple](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20lcm&type=code)
+   - [ ] [Primes](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20fibonacci&type=code)
+   - [ ] [Primefactors](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20primefactors&type=code)
