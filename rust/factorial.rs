@@ -7,7 +7,7 @@
 
 use std::env;
 
-// calculates the factorial of a given number
+// calculate the factorial of a given number
 fn factorial(n: i64) -> i64 {
     if n == 0 {
         1

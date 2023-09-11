@@ -13,7 +13,7 @@ import (
 	"strconv"
 )
 
-// calculates the factorial of a given number
+// calculate the factorial of a given number
 func factorial(n int) int {
 	if n == 0 {
 		return 1

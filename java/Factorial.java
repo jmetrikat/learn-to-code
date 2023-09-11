@@ -11,7 +11,7 @@
 public class Factorial {
 
     /**
-     * calculates the factorial of a given number
+     * calculate the factorial of a given number
      */
     public static long factorial(long n) {
         if (n == 0) {

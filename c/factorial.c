@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* calculates the factorial of a given number */
+/* calculate the factorial of a given number */
 long long factorial(long long n) {
     if (n == 0) {
         return 1;

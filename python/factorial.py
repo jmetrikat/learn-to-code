@@ -12,7 +12,7 @@
 
 import sys
 
-# calculates the factorial of a given number
+# calculate the factorial of a given number
 def factorial(n: int) -> int:
     if n == 0:
         return 1
