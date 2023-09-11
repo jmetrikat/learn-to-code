@@ -3,9 +3,9 @@ CFLAGS += -fcolor-diagnostics -fansi-escape-codes -g -Og -Wall -pthread -pedanti
 SANITIZER = -fsanitize=address -fsanitize=undefined -fsanitize=leak
 
 SRC = $(shell find . -name '*.c' -print)
-OBJ = $(shell find . -name '*.o' -print)
+OBJ = $(SRC:.c=.o)
 DSYM = $(shell find . -name '*.dSYM' -print)
-TRG = $(SRC:%.c=%)
+TRG = $(SRC:.c=)
 
 all: $(TRG)
 
