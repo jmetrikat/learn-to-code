@@ -13,7 +13,7 @@ public class Factorial {
     /**
      * calculate the factorial of a given number
      */
-    public static long factorial(long n) {
+    public static long factorial(int n) {
         if (n == 0) {
             return 1;
         } else {
@@ -30,7 +30,7 @@ public class Factorial {
             System.exit(1);
         }
 
-        long n = Integer.parseInt(args[0]);
+        int n = Integer.parseInt(args[0]);
         if (n < 0) {
             System.out.println("Number must be positive.");
             System.exit(1);

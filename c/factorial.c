@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 /* calculate the factorial of a given number */
-long long factorial(long long n) {
+long long factorial(int n) {
     if (n == 0) {
         return 1;
     } else {
