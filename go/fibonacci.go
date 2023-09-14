@@ -14,9 +14,9 @@ import (
 	"strconv"
 )
 
-// calculate the fibonacci number of a given number
+// calculate the fibonacci sequence of a given number
 func fibonacci(n int) int {
-	fib := make([]int, n+1, n+2)
+	fib := make([]int, n+2)
 
 	if n < 2 {
 		fib = fib[0:2]
@@ -45,6 +45,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
 	if n < 0 {
 		fmt.Println("Number must be positive.")
 		os.Exit(1)

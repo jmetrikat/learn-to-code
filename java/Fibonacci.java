@@ -10,7 +10,7 @@
 public class Fibonacci {
 
     /**
-     * calculates the fibonacci sequence of a given number
+     * calculate the fibonacci sequence of a given number
      */
     public static long fibonacci(int n) {
         long fib[] = new long[n + 2];

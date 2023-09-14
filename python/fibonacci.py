@@ -13,7 +13,7 @@
 import sys
 
 
-# calculate the fibonacci sequence of a given number
+# calculate the n-th Fibonacci number
 def fibonacci(n: int) -> int:
     fib = [0 for i in range(n+2)]
 

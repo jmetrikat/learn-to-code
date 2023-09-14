@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* calculate the fibonacci sequence of a given number */
+/* calculate the n-th Fibonacci number */
 long long fibonacci(int n) {
     long long *fib = (long long *) malloc((n + 2) * sizeof(long long));
 
