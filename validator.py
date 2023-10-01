@@ -28,7 +28,7 @@ expected_outputs = {
         8: 40320,
         9: 362880,
         10: 3628800,
-        20: 2432902008176640000, # limit for java, c, c++, go and rust
+        20: 2432902008176640000,  # limit for java, c, c++, go and rust
     },
     "fibonacci": {
         -1: "Number must be positive.",
@@ -43,7 +43,7 @@ expected_outputs = {
         8: 21,
         9: 34,
         10: 55,
-        92: 7540113804746346429, # limit for java, c, c++, go and rust
+        92: 7540113804746346429,  # limit for java, c, c++, go and rust
     },
     "gcd": {
         (10, 25): 5,
@@ -98,175 +98,6 @@ expected_outputs = {
         10: "2\n3\n5\n7"
     }
 }
-
-
-# run solution for a given problem in C and return the output
-# def run_c_solution(problem: str, key: int) -> str:
-#     try:
-#         os.chdir(f"{repo_path}/c")
-#         if problem == "gcd" or problem == "lcm":
-#             output = subprocess.check_output([f"./{problem}", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-#         else:
-#             output = subprocess.check_output([f"./{problem}", f"{key}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
-#         if problem == "primefactors" or problem == "primes":
-#             return output.decode("utf-8").strip()
-#         else:
-#             return int(output.decode("utf-8").strip())
-
-#     except subprocess.TimeoutExpired:
-#         return f" \033[3m{problem}.c\033[0m" + err_msg_timeout
-
-#     except subprocess.CalledProcessError as e:
-#         if "be positive" in e.output.decode("utf-8") or "be greater than" in e.output.decode("utf-8"):
-#             return e.output.decode("utf-8").strip()
-#         elif "no such file or directory" in e.output.decode("utf-8"):
-#             return err_msg_file_not_found
-#         else:
-#             print(f"Error running {problem}:")
-#             print(e.output.decode("utf-8"))
-#             return None
-
-
-# run solution for a given problem in C++ and return the output
-# def run_cpp_solution(problem: str, key: int) -> str:
-#     try:
-#         os.chdir(f"{repo_path}/cpp")
-#         if problem == "gcd" or problem == "lcm":
-#             output = subprocess.check_output(
-#                 [f"./{problem}", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-#         else:
-#             output = subprocess.check_output(
-#                 [f"./{problem}", f"{key}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
-#         if problem == "primefactors" or problem == "primes":
-#             return output.decode("utf-8").strip()
-#         else:
-#             return int(output.decode("utf-8").strip())
-
-#     except subprocess.TimeoutExpired:
-#         return f" \033[3m{problem}.c\033[0m" + err_msg_timeout
-
-#     except subprocess.CalledProcessError as e:
-#         if "be positive" in e.output.decode("utf-8") or "be greater than" in e.output.decode("utf-8"):
-#             return e.output.decode("utf-8").strip()
-#         elif "no such file or directory" in e.output.decode("utf-8"):
-#             return err_msg_file_not_found
-#         else:
-#             print(f"Error running {problem}:")
-#             print(e.output.decode("utf-8"))
-#             return None
-
-
-# run solution for a given problem in Go and return the output
-# def run_go_solution(problem: str, key: int) -> str:
-#     try:
-#         os.chdir(f"{repo_path}/go")
-#         if problem == "gcd" or problem == "lcm":
-#             output = subprocess.check_output(["go", "run", f"{problem}.go", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-#         else:
-#             output = subprocess.check_output(["go", "run", f"{problem}.go", f"{key}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
-#         if problem == "primefactors" or problem == "primes":
-#             return output.decode("utf-8").strip()
-#         else:
-#             return int(output.decode("utf-8").strip())
-
-#     except subprocess.TimeoutExpired:
-#         return f" \033[3m{problem}.go\033[0m" + err_msg_timeout
-
-#     except subprocess.CalledProcessError as e:
-#         if "be positive" in e.output.decode("utf-8") or "be greater than" in e.output.decode("utf-8"):
-#             return e.output.decode("utf-8").strip().replace("\nexit status 1", "")
-#         elif "no such file or directory" in e.output.decode("utf-8"):
-#             return err_msg_file_not_found
-#         else:
-#             print(f"Error running {problem}:")
-#             print(e.output.decode("utf-8"))
-#             return None
-
-
-# run solution for a given problem in Java and return the output
-# def run_java_solution(problem: str, key: int) -> str:
-#     try:
-#         if problem == "gcd" or problem == "lcm":
-#             output = subprocess.check_output(["java", f"{problem[0].upper() + problem[1:]}", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-#         else:
-#             output = subprocess.check_output(["java", f"{problem[0].upper() + problem[1:]}", f"{key}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
-#         if problem == "primefactors" or problem == "primes":
-#             return output.decode("utf-8").strip()
-#         else:
-#             return int(output.decode("utf-8").strip())
-
-#     except subprocess.TimeoutExpired:
-#         return f" \033[3m{problem}.java\033[0m" + err_msg_timeout
-
-#     except subprocess.CalledProcessError as e:
-#         if "be positive" in e.output.decode("utf-8") or "be greater than" in e.output.decode("utf-8"):
-#             return e.output.decode("utf-8").strip()
-#         elif "file not found" in e.output.decode("utf-8"):
-#             return err_msg_file_not_found
-#         else:
-#             print(f"Error running {problem}:")
-#             print(e.output.decode("utf-8"))
-#             return None
-
-
-# run solution for a given problem in Python and return the output
-# def run_python_solution(problem: str, key: int) -> str:
-#     try:
-#         os.chdir(f"{repo_path}/python")
-#         if problem == "gcd" or problem == "lcm":
-#             output = subprocess.check_output(["/opt/homebrew/bin/python3.11", f"{problem}.py", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-#         else:
-#             output = subprocess.check_output(["/opt/homebrew/bin/python3.11", f"{problem}.py", f"{key}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
-#         if problem == "primefactors" or problem == "primes":
-#             return output.decode("utf-8").strip()
-#         else:
-#             return int(output.decode("utf-8").strip())
-
-#     except subprocess.TimeoutExpired:
-#         return f" \033[3m{problem}.py\033[0m" + err_msg_timeout
-
-#     except subprocess.CalledProcessError as e:
-#         if "be positive" in e.output.decode("utf-8") or "be greater than" in e.output.decode("utf-8"):
-#             return e.output.decode("utf-8").strip()
-#         elif "no such file or directory" in e.output.decode("utf-8"):
-#             return err_msg_file_not_found
-#         else:
-#             print(f"Error running {problem}:")
-#             print(e.output.decode("utf-8"))
-#             return None
-
-
-# run solution for a given problem in Rust and return the output
-# def run_rust_solution(problem: str, key: int) -> str:
-#     try:
-#         os.chdir(f"{repo_path}/rust")
-#         if problem == "gcd" or problem == "lcm":
-#             output = subprocess.check_output([f"./{problem}", f"{key[0]}", f"{key[1]}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-#         else:
-#             output = subprocess.check_output([f"./{problem}", f"{key}"], stderr=subprocess.STDOUT, timeout=timeout_in_seconds)
-
-#         if problem == "primefactors" or problem == "primes":
-#             return output.decode("utf-8").strip()
-#         else:
-#             return int(output.decode("utf-8").strip())
-
-#     except subprocess.TimeoutExpired:
-#         return f" \033[3m{problem}.rust\033[0m" + err_msg_timeout
-
-#     except subprocess.CalledProcessError as e:
-#         if "be positive" in e.output.decode("utf-8") or "be greater than" in e.output.decode("utf-8"):
-#             return e.output.decode("utf-8").strip()
-#         elif "No such file or directory" in e.output.decode("utf-8"):
-#             return err_msg_file_not_found
-#         else:
-#             print(f"Error running {problem}:")
-#             print(e.output.decode("utf-8"))
-#             return None
 
 
 def run_solution(lang: str, problem: str, key: int) -> str:
