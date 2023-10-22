@@ -8,6 +8,7 @@
 ![Go Badge](https://img.shields.io/badge/Go-grey?style=flat-square&logo=go&logoColor=white)
 ![Python Badge](https://img.shields.io/badge/Python-grey?style=flat-square&logo=python&logoColor=white)
 ![Rust Badge](https://img.shields.io/badge/Rust-grey?style=flat-square&logo=rust&logoColor=white)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-grey?style=flat-square&logo=typescript&logoColor=white)
 
 Exploring solutions to common programming challenges in a variety of programming languages.
 
@@ -19,6 +20,7 @@ Exploring solutions to common programming challenges in a variety of programming
    - [ ] [Go](./go/)
    - [x] [Python](./python/)
    - [ ] [Rust](./rust/)
+   - [ ] [TypeScript](./typescript/)
 
 ## Problems
    - [x] [Factorial](https://github.com/search?q=repo%3Ajmetrikat%2Flearn-to-code%20factorial&type=code)
