@@ -21,7 +21,7 @@ int gcd(int a, int b) {
 
 /* calculate least common multiple using greatest common divisor */
 unsigned int lcm(unsigned int a, unsigned int b) {
-    return a * b / gcd(a, b);
+    return (a * b) / gcd(a, b);
 }
 
 int main(int argc, char *argv[]) {
