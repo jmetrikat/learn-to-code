@@ -14,7 +14,7 @@ Exploring solutions to common programming challenges in a variety of programming
 
 ## Languages
    - [x] [C](./c/)
-   - [ ] [C++](./cpp/)
+   - [x] [C++](./cpp/)
    - [x] [Java](./java/)
    - [ ] [JavaScript](./javascript/)
    - [ ] [Go](./go/)
