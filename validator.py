@@ -306,7 +306,7 @@ elif choice == "6":
     for problem in problems:
         if validate_solution(lang, problem, verbose) == 0:
             correct += 1
-            subprocess.run(["rm", f"{problem}"], check=True)
+        subprocess.run(["rm", f"{problem}"], check=True)
 
     print('\033[1m' + f"{correct}/{len(problems)} problems correct in {lang}." + '\033[0m')
 
